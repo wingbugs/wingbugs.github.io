@@ -84,7 +84,7 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
+  font-family: 'Nanum Gothic', sans-serif;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -102,6 +102,10 @@ a {
   -webkit-text-decoration-skip: objects;
   /* 2 */
 }
+
+a:link {color:#515151; text-decoration: none;}
+a:visited {color:#515151; text-decoration: none;}
+a:hover {color:#069; font-weight:bold}
 
 /**
  * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
@@ -140,7 +144,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: 'Nanum Gothic', sans-serif;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -231,7 +235,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   /* 1 */
   font-size: 100%;
   /* 1 */
@@ -773,7 +777,7 @@ html {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   color: #515151;
   background-color: #fbfbfb;
   margin: 0;
@@ -884,12 +888,19 @@ table tfoot td {
 }
 
 .wrapper {
-  max-width: 1250px;
+  /*max-width: 1250px;*/
   position: relative;
 }
 
 .post, .article-page {
   background-color: #fff;
+}
+
+#post-list a {
+   font-weight:bold;
+}
+.page-content a {
+   color:#2e87e7;
 }
 
 ::-moz-selection {
@@ -936,9 +947,32 @@ table tfoot td {
   background-color: #ffffff;
 }
 
-.about {
-  margin: 0 0 40px;
+.side-wrap {
+  margin: 0 0 20px;
+}
+
+.sidebar-nav-item-title {
+  font-weight:bold;
+  border-bottom: solid 1px #cccc;
+}
+
+.sidebar-nav-item {
+  display: block; 
+}
+
+.badge {
+  display: block;
+  float: right;
   text-align: center;
+  margin-right: 15px;
+  margin-top: 3px;
+  /*padding: 0 10px;*/
+  font-size: 12px;
+  color:#515151;
+}
+
+.about {
+  margin: 0 0 20px;
 }
 
 .about .cover-author-image {
@@ -969,7 +1003,7 @@ table tfoot td {
 }
 
 .about .author-name {
-  font-family: 'PT Serif', serif;
+  font-family: 'Nanum Gothic', sans-serif;
   margin: 0 0 10px;
   position: relative;
   padding-bottom: 15px;
@@ -977,6 +1011,7 @@ table tfoot td {
   text-transform: uppercase;
   color: #333030;
   font-weight: 700;
+  text-align: center;
 }
 
 .about .author-name::after {
@@ -1162,7 +1197,7 @@ footer .copyright {
 }
 
 .post .post-content .post-title a {
-  font-family: 'PT Serif', serif;
+  font-family: 'Nanum Gothic', sans-serif;
   text-decoration: none;
   color: #263959;
 }
